@@ -3,7 +3,8 @@
 import { Moon, Sun } from "lucide-react"
 import { useState, useEffect } from "react"
 import Image from "next/image"
-import { Mail, Phone, Play, BarChart3, Users, Trophy, Download, FacebookIcon,Linkedin, InstagramIcon,ChevronUp } from "lucide-react"
+import { Mail, Phone, Play, BarChart3, Users, Trophy, Download, FacebookIcon,Linkedin, InstagramIcon, ChevronUp, Menu,
+  X } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -12,6 +13,7 @@ import { Badge } from "@/components/ui/badge"
 export default function Component() {
   const [darkMode, setDarkMode] = useState(false)
   const [showBackToTop, setShowBackToTop] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   useEffect(() => {
     const isDark = localStorage.getItem("darkMode") === "true"
@@ -95,8 +97,56 @@ export default function Component() {
                 <Moon className="w-5 h-5 text-gray-600 dark:text-gray-800" />
               )}
             </button>
+
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="md:hidden p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+              aria-label="Toggle mobile menu"
+            >
+              {mobileMenuOpen ? (
+                <X className="w-5 h-5 text-gray-600 dark:text-gray-300" />
+              ) : (
+                <Menu className="w-5 h-5 text-gray-600 dark:text-gray-300" />
+              )}
+            </button>
           </div>
         </div>
+
+        {/* Mobile Navigation Menu */}
+        {mobileMenuOpen && (
+          <div className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
+            <nav className="px-4 py-4 space-y-4">
+              <a
+                href="#about"
+                onClick={() => setMobileMenuOpen(false)}
+                className="block text-gray-600 dark:text-gray-300 hover:text-[#4B0082] dark:hover:text-purple-400 transition-colors py-2"
+              >
+                About
+              </a>
+              <a
+                href="#skills"
+                onClick={() => setMobileMenuOpen(false)}
+                className="block text-gray-600 dark:text-gray-300 hover:text-[#4B0082] dark:hover:text-purple-400 transition-colors py-2"
+              >
+                Skills
+              </a>
+              <a
+                href="#experience"
+                onClick={() => setMobileMenuOpen(false)}
+                className="block text-gray-600 dark:text-gray-300 hover:text-[#4B0082] dark:hover:text-purple-400 transition-colors py-2"
+              >
+                Experience
+              </a>
+              <a
+                href="#contact"
+                onClick={() => setMobileMenuOpen(false)}
+                className="block text-gray-600 dark:text-gray-300 hover:text-[#4B0082] dark:hover:text-purple-400 transition-colors py-2"
+              >
+                Contact
+              </a>
+            </nav>
+          </div>
+        )}
       </header>
 
       {/* Hero Section */}
