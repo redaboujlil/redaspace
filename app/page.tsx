@@ -510,10 +510,10 @@ export default function Component() {
 
           <div className="flex justify-center space-x-4">
             <Button variant="outline" size="icon">
-              <FacebookIcon className="w-4 h-4" href="https://www.facebook.com/reda.boujlil.1/"/>
+              <a href="https://www.facebook.com/reda.boujlil.1/"><FacebookIcon className="w-4 h-4"/></a> 
             </Button>
             <Button variant="outline" size="icon" >
-              <InstagramIcon className="w-4 h-4" href="https://www.instagram.com/_reda.boujlil/"/>
+              <a href="https://www.instagram.com/_reda.boujlil/"><InstagramIcon className="w-4 h-4" /></a> 
             </Button>
           </div>
         </div>
@@ -532,7 +532,7 @@ export default function Component() {
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-8 px-4">
         <div className="max-w-6xl mx-auto text-center">
-          <p>© 2025 Reda Boujlil - Basketball Video Analyst. All rights reserved.</p>
+          <p>© 2025 <a href="https://redaboujlil.space/"> Reda Boujlil </a> - Basketball Video Analyst. All rights reserved.</p>
         </div>
       </footer>
     </div>
