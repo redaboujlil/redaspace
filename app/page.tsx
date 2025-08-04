@@ -55,9 +55,15 @@ export default function Component() {
         <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-[#4B0082] rounded-full flex items-center justify-center">
-              <Play className="w-4 h-4 text-white" />
+              <Image
+              src="\logo-space.png"
+              alt="Basketball Analytics Logo"
+              width={50}
+              height={50}
+              
+            />
             </div>
-            <span className="font-bold text-xl dark:text-white">GameSpeaks By Reda</span>
+            <a href="https://redaboujlil.space/"><span className="font-bold text-xl dark:text-white">Reda BOUJLIL</span></a> 
           </div>
           <div className="flex items-center space-x-6">
             <nav className="hidden md:flex space-x-6">
@@ -172,12 +178,16 @@ export default function Component() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-[#4B0082] hover:bg-purple-800">
-                <Download className="w-4 h-4 mr-2" />
-                Download CV
+                <a href="/my-cv.pdf" className="inline-flex items-center no-underline">
+                  <Download className="w-4 h-4 mr-2" />
+                  Download CV
+                </a>
               </Button>
               <Button variant="outline" size="lg">
-                <Mail className="w-4 h-4 mr-2" href="mailto:redaboujlil99@gmail.com"/>
-                Get In Touch
+                <a href="mailto:redaboujlil99@email.com" className="inline-flex items-center no-underline">
+                  <Mail className="w-4 h-4 mr-2"/>
+                  Get In Touch
+                </a>
               </Button>
             </div>
           </div>
@@ -188,7 +198,7 @@ export default function Component() {
       <section id="about" className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">About Me</h2>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-12 items-center ">
             <div>
               <p className="text-lg text-gray-600 mb-6">
                 With over 5 years of experience in basketball video analysis, I specialize in breaking down game footage
@@ -200,10 +210,10 @@ export default function Component() {
                 performance through detailed video breakdowns, statistical analysis, and strategic planning.
               </p>
               <div className="flex flex-wrap gap-2">
-                <Badge variant="secondary">Video Analysis</Badge>
-                <Badge variant="secondary">Statistical Modeling</Badge>
-                <Badge variant="secondary">Performance Analytics</Badge>
-                <Badge variant="secondary">Team Strategy</Badge>
+                <Badge variant="secondary" className="bg-purple-100">Video Analysis</Badge>
+                <Badge variant="secondary" className="bg-purple-100">Statistical Modeling</Badge>
+                <Badge variant="secondary" className="bg-purple-100">Performance Analytics</Badge>
+                <Badge variant="secondary" className="bg-purple-100">Team Strategy</Badge>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-6">

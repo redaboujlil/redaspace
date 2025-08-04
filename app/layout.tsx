@@ -6,7 +6,7 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'Reda BOUJLIL',
   description: 'Created with RB',
-  generator: 'redaboujlil.ma',
+  generator: 'redaboujlil.space',
 }
 
 export default function RootLayout({
