@@ -323,19 +323,16 @@ export default function Component() {
 
           <div className="max-w-4xl mx-auto">
             <div className="relative bg-gray-900 rounded-lg overflow-hidden shadow-2xl">
-              <video className="w-full h-auto" controls poster="/placeholder.svg?height=400&width=800">
-                <source src="/demo-video.mp4" type="video/mp4" />
+              {/* Replace this video element with your actual video */}
+              <video
+                className="w-full h-auto"
+                controls
+                poster="/fr cover.png"
+              >
+                {/* Add your video file path here */}
+                <source src="/FRA PNR defense.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
-
-              {/* Video overlay for demo purposes */}
-              <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                <div className="text-center text-white">
-                  <Play className="w-16 h-16 mx-auto mb-4 opacity-80" />
-                  <h3 className="text-2xl font-bold mb-2">Demo Video</h3>
-                  <p className="text-lg opacity-90">Basketball Analysis Breakdown</p>
-                </div>
-              </div>
             </div>
 
             <div className="mt-8 grid md:grid-cols-3 gap-6">
