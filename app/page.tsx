@@ -326,7 +326,7 @@ export default function Component() {
               {/* Replace the YouTube video ID in the src URL below */}
               <iframe
                 className="w-full h-64 md:h-96"
-                src="https://youtu.be/2OKTaa67VyA"
+                src="https://www.youtube.com/embed/2OKTaa67VyA"
                 title="Basketball Analysis Video"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
