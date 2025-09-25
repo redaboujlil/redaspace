@@ -323,16 +323,15 @@ export default function Component() {
 
           <div className="max-w-4xl mx-auto">
             <div className="relative bg-gray-900 rounded-lg overflow-hidden shadow-2xl">
-              {/* Replace this video element with your actual video */}
-              <video
-                className="w-full h-auto"
-                controls
-                poster="/fr cover.png"
-              >
-                {/* Add your video file path here */}
-                <source src="/FRA PNR defense.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              {/* Replace the YouTube video ID in the src URL below */}
+              <iframe
+                className="w-full h-64 md:h-96"
+                src="https://youtu.be/2OKTaa67VyA"
+                title="Basketball Analysis Video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
             </div>
 
             <div className="mt-8 grid md:grid-cols-3 gap-6">
