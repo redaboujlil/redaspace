@@ -3,8 +3,8 @@
 import { Moon, Sun } from "lucide-react"
 import { useState, useEffect } from "react"
 import Image from "next/image"
-import { Mail, Phone, Play, BarChart3, Users, Trophy, Download, FacebookIcon,Linkedin, InstagramIcon, ChevronUp, Menu,
-  X } from "lucide-react"
+import { Mail, Phone, Play, BarChart3, Users, Trophy, Download, ChevronUp, Menu, X } from "lucide-react"
+import { FacebookIcon, InstagramIcon, LinkedinIcon as Linkedin } from "@/components/social-icons"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -171,10 +171,10 @@ export default function Component() {
               className="rounded-full mx-auto mb-6 border-4 border-white shadow-lg"
             />
             <h1 className="text-6xl font-bold text-gray-900 dark:text-white mb-4">Reda BOUJLIL</h1>
-            <p className="text-3xl text-[#4B0082] font-semibold mb-6">Sports Video Analyst</p>
+            <p className="text-3xl text-[#4B0082] font-semibold mb-6">Soccer Performance Analyst</p>
             <p className="text-xl font-bold text-gray-800 dark:text-gray-800 max-w-3xl mx-auto mb-8">
-              Transforming game footage into winning strategies through advanced video analysis, statistical insights,
-              and tactical breakdowns for professional teams.
+              Turning match footage and performance data into tactical insights, opponent reports, and player
+              development plans that help coaches win on the pitch.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-[#4B0082] hover:bg-purple-800">
@@ -184,7 +184,7 @@ export default function Component() {
                 </a>
               </Button>
               <Button variant="outline" size="lg">
-                <a href="mailto:redaboujlil99@email.com" className="inline-flex items-center no-underline">
+                <a href="mailto:redaboujlil99@gmail.com" className="inline-flex items-center no-underline">
                   <Mail className="w-4 h-4 mr-2"/>
                   Get In Touch
                 </a>
@@ -201,19 +201,21 @@ export default function Component() {
           <div className="grid md:grid-cols-2 gap-12 items-center ">
             <div>
               <p className="text-lg text-gray-600 mb-6">
-                With over 6 years of experience in football and basketball video analysis, I specialize in breaking down game footage
-                to provide actionable insights for coaches and players. My expertise spans from individual player
-                development to team strategy optimization.
+                I am a soccer performance analyst working with the Royal Moroccan Football Federation (FRMF) youth
+                national categories. I break down matches and training sessions to help coaches understand how their
+                team plays, how opponents will play, and where each player can improve.
               </p>
               <p className="text-lg text-gray-600 mb-6">
-                I have worked with professional teams, and individual athletes to enhance their
-                performance through detailed video breakdowns, statistical analysis, and strategic planning.
+                Before focusing on soccer, I spent over 5 years as a video analyst and assistant coach in professional
+                basketball, winning titles at the highest level in Morocco. That background gives me a sharp eye for
+                tactical patterns, spacing, and transitions, which I now apply to the 11-a-side game.
               </p>
               <div className="flex flex-wrap gap-2">
-                <Badge variant="secondary" className="bg-purple-100">Video Analysis</Badge>
-                <Badge variant="secondary" className="bg-purple-100">Statistical Modeling</Badge>
-                <Badge variant="secondary" className="bg-purple-100">Performance Analytics</Badge>
-                <Badge variant="secondary" className="bg-purple-100">Team Strategy</Badge>
+                <Badge variant="secondary" className="bg-purple-100">Match Analysis</Badge>
+                <Badge variant="secondary" className="bg-purple-100">Opponent Scouting</Badge>
+                <Badge variant="secondary" className="bg-purple-100">Performance Data</Badge>
+                <Badge variant="secondary" className="bg-purple-100">Set Pieces</Badge>
+                <Badge variant="secondary" className="bg-purple-100">Player Development</Badge>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-6">
@@ -228,7 +230,7 @@ export default function Component() {
                 <CardContent className="p-6 text-center">
                   <Play className="w-8 h-8 text-[#4B0082] mx-auto mb-2" />
                   <div className="text-2xl font-bold">500+</div>
-                  <div className="text-sm text-gray-600">Games Reviewed</div>
+                  <div className="text-sm text-gray-600">Matches Analyzed</div>
                 </CardContent>
               </Card>
               <Card>
@@ -258,17 +260,17 @@ export default function Component() {
             <Card>
               <CardHeader>
                 <Play className="w-10 h-10 text-[#4B0082] mb-2" />
-                <CardTitle>Video Breakdown</CardTitle>
+                <CardTitle>Tactical Match Analysis</CardTitle>
                 <CardDescription>
-                  Detailed analysis of game footage, identifying patterns, strengths, and areas for improvement
+                  Coding and breaking down matches to reveal how a team builds, presses, and defends
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm">
-                  <li>• Offensive & Defensive Schemes</li>
-                  <li>• Player Movement Analysis</li>
-                  <li>• Shot Selection Optimization</li>
-                  <li>• Transition Play Breakdown</li>
+                  <li>• Build-up & Attacking Patterns</li>
+                  <li>• Pressing & Defensive Shape</li>
+                  <li>• Transitions (Attack ↔ Defense)</li>
+                  <li>• Set-Piece Analysis</li>
                 </ul>
               </CardContent>
             </Card>
@@ -276,17 +278,17 @@ export default function Component() {
             <Card>
               <CardHeader>
                 <BarChart3 className="w-10 h-10 text-[#4B0082] mb-2" />
-                <CardTitle>Statistical Analysis</CardTitle>
+                <CardTitle>Performance Data</CardTitle>
                 <CardDescription>
-                  Advanced metrics and data visualization to support strategic decisions
+                  Turning event and physical data into clear reports and visuals for staff
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm">
-                  <li>• Performance Metrics</li>
-                  <li>• Efficiency Ratings</li>
-                  <li>• Trend Analysis</li>
-                  <li>• Comparative Studies</li>
+                  <li>• Team & Player KPIs</li>
+                  <li>• Shot Maps & Chance Creation</li>
+                  <li>• Post-Match Reports</li>
+                  <li>• Trend & Season Tracking</li>
                 </ul>
               </CardContent>
             </Card>
@@ -294,15 +296,15 @@ export default function Component() {
             <Card>
               <CardHeader>
                 <Users className="w-10 h-10 text-[#4B0082] mb-2" />
-                <CardTitle>Team Consulting</CardTitle>
-                <CardDescription>Strategic consultation for coaches and management on team development</CardDescription>
+                <CardTitle>Scouting & Development</CardTitle>
+                <CardDescription>Preparing the staff for the next opponent and tracking player progress</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm">
-                  <li>• Game Planning</li>
-                  <li>• Player Development</li>
-                  <li>• Opponent Scouting</li>
-                  <li>• Training Optimization</li>
+                  <li>• Opponent Scouting Reports</li>
+                  <li>• Individual Player Clips</li>
+                  <li>• Youth Player Development</li>
+                  <li>• Match & Training Filming</li>
                 </ul>
               </CardContent>
             </Card>
@@ -316,8 +318,8 @@ export default function Component() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">See My Work in Action</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Watch this demo video showcasing my basketball video analysis process, from raw game footage to actionable
-              insights that help teams improve their performance.
+              Watch this demo showcasing my video analysis process, from raw match footage to actionable insights that
+              help coaching staff improve team performance.
             </p>
           </div>
 
@@ -327,7 +329,7 @@ export default function Component() {
               <iframe
                 className="w-full h-64 md:h-96"
                 src="https://www.youtube.com/embed/2OKTaa67VyA"
-                title="Basketball Analysis Video"
+                title="Performance Analysis Demo Video"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -386,7 +388,7 @@ export default function Component() {
               <CardHeader>
                 <div className="flex justify-between items-start">
                   <div>
-                    <CardTitle>Football Video Analyst</CardTitle>
+                    <CardTitle>Soccer Performance Analyst</CardTitle>
                     <CardDescription className="text-lg">FRMF / CODM Training Center </CardDescription>
                   </div>
                   <Badge>2025 - Present</Badge>
@@ -433,29 +435,6 @@ export default function Component() {
               </CardContent>
             </Card>
 
-            <Card>
-              <CardHeader>
-                <div className="flex justify-between items-start">
-                  <div>
-                    <CardTitle>Basketball Video Analyst</CardTitle>
-                    <CardDescription className="text-lg">Fath Union Sportif - FUS Basketball</CardDescription>
-                  </div>
-                  <Badge variant="outline">2023 - 2024</Badge>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 mb-4">
-                  Provided video analysis support for Division I of Moroccan championship, focusing on game strategy developing.
-                </p>
-                <ul className="list-disc list-inside space-y-1 text-sm text-gray-600">
-                  <li>2023-24 Championship Winners</li>
-                  <li>Quarter Final of Basketball Africa League - BAL</li>
-                  <li>Analyzed 60+ games, providing detailed breakdowns for coaching staff</li>
-                  <li>Supported coaching staff with basic statistical analysis in live game</li>
-                </ul>
-              </CardContent>
-            </Card>
-            
             <Card>
               <CardHeader>
                 <div className="flex justify-between items-start">
@@ -531,8 +510,8 @@ export default function Component() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-8">Let's Work Together</h2>
           <p className="text-xl text-gray-600 mb-12">
-            Ready to take your team's performance to the next level? Get in touch to discuss how video analysis can
-            transform your game.
+            Looking for a performance analyst for your club, academy, or national team? Get in touch to discuss how
+            match analysis and data can give your team an edge.
           </p>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
@@ -577,7 +556,7 @@ export default function Component() {
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-8 px-4">
         <div className="max-w-6xl mx-auto text-center">
-          <p>© 2026 <a href="https://redaboujlil.space/"> Reda Boujlil </a> - Basketball Video Analyst. All rights reserved.</p>
+          <p>© 2026 <a href="https://redaboujlil.space/"> Reda Boujlil </a> - Soccer Performance Analyst. All rights reserved.</p>
         </div>
       </footer>
     </div>

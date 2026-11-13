@@ -4,8 +4,9 @@ import { GeistMono } from 'geist/font/mono'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Reda BOUJLIL',
-  description: 'Created with RB',
+  title: 'Reda BOUJLIL | Soccer Performance Analyst',
+  description:
+    'Reda Boujlil is a soccer performance analyst specializing in tactical match analysis, opponent scouting, performance data, and youth player development.',
   generator: 'redaboujlil.space',
 }
 
