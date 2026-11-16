@@ -1,4 +1,5 @@
 import { Contact } from '@/components/contact'
+import { CurrentYear } from '@/components/current-year'
 import { Education } from '@/components/education'
 import { Experience } from '@/components/experience'
 import { Hero } from '@/components/hero'
@@ -17,7 +18,9 @@ export default function Page() {
         <Contact />
       </main>
       <footer className="mx-auto flex max-w-6xl justify-between px-6 py-6 text-xs uppercase tracking-widest text-muted-foreground md:px-10">
-        <span>© 2026 Reda Boujlil</span>
+        <span>
+          © <CurrentYear /> Reda Boujlil
+        </span>
         <span>Made in Morocco</span>
       </footer>
     </>

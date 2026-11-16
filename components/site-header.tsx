@@ -1,3 +1,5 @@
+import { CurrentYear } from '@/components/current-year'
+
 export function SiteHeader() {
   return (
     <header className="mx-auto grid max-w-6xl grid-cols-3 items-center px-6 pt-8 md:px-10">
@@ -14,7 +16,7 @@ export function SiteHeader() {
       <p className="text-right text-[10px] font-medium uppercase leading-relaxed tracking-[0.3em] md:text-xs">
         Portfolio
         <br />
-        2026
+        <CurrentYear />
       </p>
     </header>
   )
