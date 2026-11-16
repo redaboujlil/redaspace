@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#1a7f56"/>
+  <text x="9" y="31" font-family="Anton, Impact, 'Arial Narrow Bold', 'Arial Black', sans-serif" font-size="28" font-weight="700" fill="#f8f8f6">R</text>
+  <text x="35" y="56" font-family="Anton, Impact, 'Arial Narrow Bold', 'Arial Black', sans-serif" font-size="28" font-weight="700" fill="#f8f8f6">B</text>
+  <line x1="20" y1="54" x2="44" y2="10" stroke="#f8f8f6" stroke-width="3" stroke-linecap="round"/>
+</svg>
