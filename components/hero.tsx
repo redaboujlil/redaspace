@@ -4,7 +4,7 @@ export function Hero() {
   return (
     <section className="mx-auto grid max-w-6xl items-end gap-12 px-6 pt-10 md:grid-cols-[1.25fr_1fr] md:px-10 md:pt-16">
       <div className="flex flex-col gap-6 pb-12 md:pb-20">
-        <h1 className="rise font-display text-[22vw] uppercase leading-[0.86] tracking-tight text-foreground md:text-[9.5rem] lg:text-[12.5rem]">
+        <h1 className="rise font-display text-[22vw] uppercase leading-none tracking-tight text-foreground md:text-[9.5rem] lg:text-[12.5rem]">
           Reda
           <br />
           Boujlil
@@ -19,7 +19,7 @@ export function Hero() {
           className="rise max-w-md text-pretty leading-relaxed text-muted-foreground"
           style={{ animationDelay: '250ms' }}
         >
-          I turn match footage and data into clear tactical insight — helping coaches prepare, players develop, and
+          I turn match footage and data into clear tactical insight helping coaches prepare, players develop, and
           youth talent reach the next level in Moroccan football and basketball.
         </p>
         <span className="rise mt-6 h-0.5 w-16 bg-primary" style={{ animationDelay: '350ms' }} aria-hidden="true" />
