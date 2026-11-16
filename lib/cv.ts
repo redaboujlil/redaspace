@@ -51,7 +51,7 @@ export const skills = [
   'Coaching Recommendations',
 ]
 
-export const software = ['Once Video Analyser', 'BePro Editor', 'Metrica Sports', 'LiveTag Pro', 'Power BI', 'Excel']
+export const software = ['Once Video Analyser', 'BePro Editor', 'Metrica Sports', 'LiveTag Pro', 'Power BI', 'Longo Match']
 
 export const education = [
   {
