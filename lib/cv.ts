@@ -78,8 +78,8 @@ export const contact = {
   email: 'redaboujlil99@gmail.com',
   phone: '+212 6 15 88 33 04',
   phoneHref: 'tel:+212615883304',
-  website: 'www.redaboujlil.space',
-  websiteHref: 'https://www.redaboujlil.space',
+  linkedin: 'Reda Boujlil',
+  linkedinHref: 'https://www.linkedin.com/in/redaboujlil/',
   instagram: '@redaboujlil',
   instagramHref: 'https://www.instagram.com/redaboujlil',
 }
