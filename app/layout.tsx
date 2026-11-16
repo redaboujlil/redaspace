@@ -1,12 +1,20 @@
-import type { Metadata } from 'next'
-import { GeistSans } from 'geist/font/sans'
-import { GeistMono } from 'geist/font/mono'
+import { Analytics } from '@vercel/analytics/next'
+import type { Metadata, Viewport } from 'next'
+import { Anton, DM_Sans } from 'next/font/google'
 import './globals.css'
 
+const anton = Anton({ subsets: ['latin'], weight: '400', variable: '--font-anton' })
+const dmSans = DM_Sans({ subsets: ['latin'], variable: '--font-dm-sans' })
+
 export const metadata: Metadata = {
-  title: 'Reda BOUJLIL',
-  description: 'Created with RB',
-  generator: 'redaboujlil.space',
+  title: 'Reda Boujlil — Video & Performance Analyst',
+  description:
+    'Portfolio of Reda Boujlil, football & basketball video and performance analyst at the FRMF CODM Training Center in Morocco.',
+  generator: 'v0.app',
+}
+
+export const viewport: Viewport = {
+  themeColor: '#f8f8f6',
 }
 
 export default function RootLayout({
@@ -15,17 +23,11 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <head>
-        <style>{`
-html {
-  font-family: ${GeistSans.style.fontFamily};
-  --font-sans: ${GeistSans.variable};
-  --font-mono: ${GeistMono.variable};
-}
-        `}</style>
-      </head>
-      <body>{children}</body>
+    <html lang="en" className={`${anton.variable} ${dmSans.variable} bg-background`}>
+      <body className="antialiased">
+        {children}
+        {process.env.NODE_ENV === 'production' && <Analytics />}
+      </body>
     </html>
   )
 }
